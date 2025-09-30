@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Portal Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Student Portal</h1>
+
+  <!--  Basics -->
+  <section>
+    <h2> Status message</h2>
+    <p id="statusMessage"></p>
+  </section>
+
+  <!--  Functions -->
+  <section>
+    <h2> Result status and GPA</h2>
+    <button onclick="checkPassStatus()">Check Pass Status</button>
+    <p id="passResult"></p>
+
+    <button onclick="calculateGPA()">Calculate GPA</button>
+    <p id="gpaResult"></p>
+  </section>
+
+  <!--  Loops -->
+  <section>
+    <h2> Subjects and study hours</h2>
+    <button onclick="listSubjects()">Show Subjects</button>
+    <ul id="subjectList"></ul>
+
+    <button onclick="countStudyHours()">Study Hours Countdown</button>
+    <ul id="studyList"></ul>
+  </section>
+
+  <!--DOM Manipulation -->
+  <section>
+    <h2> More Features</h2>
+    <button id="themeBtn">Toggle Dark Mode</button>
+
+    <input type="text" id="noteInput" placeholder="Enter a note">
+    <button onclick="addNote()">Add Note</button>
+    <ul id="notesList"></ul>
+
+    <button onclick="highlightGPA()">Highlight GPA</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
